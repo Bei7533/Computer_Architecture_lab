@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Sep 26 16:25:39 2023
+# Process ID: 18412
+# Current directory: D:/vivadoFile/1/Exp1/Exp1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18268 D:\vivadoFile\1\Exp1\Exp1\Exp1.xpr
+# Log file: D:/vivadoFile/1/Exp1/Exp1/vivado.log
+# Journal file: D:/vivadoFile/1/Exp1/Exp1\vivado.jou
+# Running On: DESKTOP-EUK436V, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 4, Host memory: 16905 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadoFile/1/Exp1/Exp1/Exp1.xpr
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/vivadoFile/1/Exp1/Exp1/code/sim/core_sim_behav.wcfg
+source core_sim.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+copy_run -name synth_1_copy_1 [get_runs synth_1] 
+set_property part xc7k160tffg676-2L [current_project]
+set_property dataflow_viewer_settings "min_width=16"   [current_fileset]
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+relaunch_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+close_sim

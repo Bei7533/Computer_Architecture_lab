@@ -1,0 +1,142 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Oct 24 22:09:14 2023
+| Host         : DESKTOP-EUK436V running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7k160t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    64 |
+|    Minimum number of control sets                        |    64 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   114 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    64 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     4 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    45 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              87 |           43 |
+| No           | No                    | Yes                    |             200 |           68 |
+| No           | Yes                   | No                     |              68 |           28 |
+| Yes          | No                    | No                     |            1442 |          767 |
+| Yes          | No                    | Yes                    |            1087 |          421 |
+| Yes          | Yes                   | No                     |              58 |           13 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+----------------------------------------------------+----------------------------------+------------------+----------------+--------------+
+|    Clock Signal   |                    Enable Signal                   |         Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+----------------------------------------------------+----------------------------------+------------------+----------------+--------------+
+|  CLK_GEN/CLK_OUT3 | DISPLAY/P2S_LED/data_count[3]_i_1__0_n_0           | rst_all                          |                2 |              4 |         2.00 |
+|  debug_clk        | core/exp_unit/csr/FSM_onehot_cur_state_reg[0][0]   | core/exp_unit/csr_raddr0         |                1 |              4 |         4.00 |
+|  CLK_GEN/CLK_OUT3 | BTN_SCAN/p_0_in                                    |                                  |                1 |              5 |         5.00 |
+|  CLK_GEN/CLK_OUT1 |                                                    | vga/U12/v_count_reg[8]_0         |                3 |              5 |         1.67 |
+|  debug_clk        | core/reg_IF_ID/FSM_onehot_cur_state_reg[0][0]      | rst_all                          |                2 |              5 |         2.50 |
+|  debug_clk        | core/exp_unit/csr/FSM_onehot_cur_state_reg[0]_2[0] |                                  |                1 |              5 |         5.00 |
+|  CLK_GEN/CLK_OUT3 | DISPLAY/P2S_SEG/next_data_count                    | rst_all                          |                2 |              6 |         3.00 |
+|  CLK_GEN/CLK_OUT3 | DISPLAY/P2S_LED/buff_0                             | DISPLAY/P2S_LED/buff[16]_i_1_n_0 |                1 |              7 |         7.00 |
+|  CLK_GEN/CLK_OUT1 | vga/U12/E[0]                                       |                                  |                3 |              7 |         2.33 |
+|  debug_clk        | core/reg_IF_ID/rst_all_reg                         | core/reg_IF_ID/rst_all_reg_0     |                3 |              9 |         3.00 |
+|  CLK_GEN/CLK_OUT3 |                                                    | vga/U12/h_count[9]_i_1_n_0       |                7 |             10 |         1.43 |
+|  CLK_GEN/CLK_OUT3 | vga/U12/v_count__30                                |                                  |                5 |             10 |         2.00 |
+|  CLK_GEN/CLK_OUT3 | DISPLAY/P2S_LED/buff_0                             |                                  |                3 |             10 |         3.33 |
+|  CLK_GEN/CLK_OUT3 |                                                    | vga/U12/rdn_reg_n_0              |                3 |             12 |         4.00 |
+|  CLK_GEN/CLK_OUT3 | DISPLAY/P2S_SEG/buff                               | DISPLAY/P2S_SEG/buff[64]_i_1_n_0 |                2 |             13 |         6.50 |
+|  CLK_GEN/CLK_OUT1 |                                                    | vga/U12/v_count_reg[8]_15        |                7 |             13 |         1.86 |
+|  debug_clk        |                                                    |                                  |                6 |             13 |         2.17 |
+|  CLK_GEN/CLK_OUT3 | DISPLAY/P2S_SEG/buff                               |                                  |                2 |             14 |         7.00 |
+|  CLK_GEN/CLK_OUT3 | DISPLAY/P2S_SEG/buff                               | DISPLAY/P2S_SEG/buff[63]_i_1_n_0 |                2 |             15 |         7.50 |
+|  CLK_GEN/CLK_OUT4 |                                                    |                                  |                6 |             17 |         2.83 |
+|  CLK_GEN/CLK_OUT3 |                                                    |                                  |               11 |             26 |         2.36 |
+|  CLK_GEN/CLK_OUT3 |                                                    | rst_all                          |                8 |             28 |         3.50 |
+|  CLK_GEN/CLK_OUT1 |                                                    |                                  |               20 |             31 |         1.55 |
+|  debug_clk        | core/exp_unit/csr/CSR[12][31]_i_1_n_0              | rst_all                          |               11 |             32 |         2.91 |
+|  debug_clk        | core/exp_unit/csr/CSR[6][31]_i_1_n_0               | rst_all                          |               13 |             32 |         2.46 |
+|  debug_clk        | core/exp_unit/csr/CSR[13][31]_i_1_n_0              | rst_all                          |                8 |             32 |         4.00 |
+|  debug_clk        | core/exp_unit/csr/CSR[14][31]_i_1_n_0              | rst_all                          |                6 |             32 |         5.33 |
+|  debug_clk        | core/exp_unit/csr/CSR[5][31]_i_1_n_0               | rst_all                          |               12 |             32 |         2.67 |
+|  debug_clk        | core/exp_unit/csr/CSR[15][31]_i_1_n_0              | rst_all                          |               13 |             32 |         2.46 |
+|  debug_clk        | core/exp_unit/csr/CSR[1][31]_i_1_n_0               | rst_all                          |               14 |             32 |         2.29 |
+|  debug_clk        | core/exp_unit/csr/CSR[2][31]_i_1_n_0               | rst_all                          |               11 |             32 |         2.91 |
+|  debug_clk        | core/exp_unit/csr/CSR[4][31]_i_1_n_0               | rst_all                          |                8 |             32 |         4.00 |
+|  debug_clk        | core/exp_unit/csr/CSR[10][31]_i_1_n_0              | rst_all                          |                8 |             32 |         4.00 |
+|  debug_clk        | core/exp_unit/csr/CSR[7][31]_i_1_n_0               | rst_all                          |               13 |             32 |         2.46 |
+|  debug_clk        | core/exp_unit/csr/CSR[0][31]_i_1_n_0               | rst_all                          |                6 |             32 |         5.33 |
+|  debug_clk        | core/exp_unit/csr/CSR[8][31]_i_1_n_0               | rst_all                          |               16 |             32 |         2.00 |
+|  debug_clk        | core/exp_unit/csr/CSR[9][31]_i_1_n_0               | rst_all                          |               20 |             32 |         1.60 |
+|  debug_clk        | core/exp_unit/csr/CSR[11][31]_i_1_n_0              | rst_all                          |                8 |             32 |         4.00 |
+|  debug_clk        | core/exp_unit/csr/FSM_onehot_cur_state_reg[0]_0[0] |                                  |               14 |             32 |         2.29 |
+|  debug_clk        | core/reg_IF_ID/PCurrent_ID[31]_i_1_n_0             | rst_all                          |               13 |             32 |         2.46 |
+|  debug_clk        | core/exp_unit/csr/CSR[3][31]_i_1_n_0               | rst_all                          |               10 |             32 |         3.20 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_0[0]                  | rst_all                          |               15 |             32 |         2.13 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_1[0]                  | rst_all                          |               15 |             32 |         2.13 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_13[0]                 | rst_all                          |                8 |             32 |         4.00 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_8[0]                  | rst_all                          |               17 |             32 |         1.88 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_4[0]                  | rst_all                          |               12 |             32 |         2.67 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_12[0]                 | rst_all                          |               12 |             32 |         2.67 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_3[0]                  | rst_all                          |               14 |             32 |         2.29 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_5[0]                  | rst_all                          |               12 |             32 |         2.67 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_7[0]                  | rst_all                          |               12 |             32 |         2.67 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_9[0]                  | rst_all                          |               16 |             32 |         2.00 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_11[0]                 | rst_all                          |               13 |             32 |         2.46 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_2[0]                  | rst_all                          |               12 |             32 |         2.67 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_10[0]                 | rst_all                          |               13 |             32 |         2.46 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_14[0]                 | rst_all                          |               12 |             32 |         2.67 |
+| ~debug_clk        | core/reg_MEM_WB/IR_WB_reg[9]_6[0]                  | rst_all                          |               11 |             32 |         2.91 |
+|  debug_clk        | core/exp_unit/csr/FSM_onehot_cur_state_reg[2]_0    |                                  |               19 |             35 |         1.84 |
+|  CLK_GEN/CLK_OUT1 | vga/U12/should_latch_debug_data                    |                                  |                6 |             44 |         7.33 |
+|  debug_clk        | core/reg_IF_ID/E[0]                                | rst_all                          |               35 |             58 |         1.66 |
+|  debug_clk        | core/exp_unit/csr/E[0]                             |                                  |               21 |             65 |         3.10 |
+|  debug_clk        | core/reg_IF_ID/rst_all_reg                         |                                  |               36 |             97 |         2.69 |
+|  debug_clk        | core/exp_unit/csr/rst_all_reg                      |                                  |               80 |            145 |         1.81 |
+|  debug_clk        |                                                    | rst_all                          |               68 |            200 |         2.94 |
+| ~debug_clk        | core/reg_EXE_MEM/E[0]                              |                                  |              582 |           1024 |         1.76 |
++-------------------+----------------------------------------------------+----------------------------------+------------------+----------------+--------------+
+
+

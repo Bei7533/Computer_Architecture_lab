@@ -1,0 +1,27 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/vivadoFile/2/22/Exp2/Exp2.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+D:/vivadoFile/2/22/Exp2/code/auxillary/CPUTEST.v,1628647838,verilog,,D:/vivadoFile/2/22/Exp2/code/core/CSRRegs.v,,CPUTEST,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/auxillary/debug_clk.v,1628262876,verilog,,D:/vivadoFile/2/22/Exp2/code/sim/core_sim.v,,debug_clk,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/common/MUX2T1_32.v,1630067822,verilog,,D:/vivadoFile/2/22/Exp2/code/common/MUX4T1_32.v,,MUX2T1_32,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/common/MUX4T1_32.v,1628301716,verilog,,D:/vivadoFile/2/22/Exp2/code/core/RAM_B.v,,MUX4T1_32,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/common/REG32.v,1630067817,verilog,,D:/vivadoFile/2/22/Exp2/code/core/REG_EX_MEM.v,,REG32,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/common/add_32.v,1630067809,verilog,,D:/vivadoFile/2/22/Exp2/code/common/cmp_32.v,,add_32,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/common/cmp_32.v,1628609816,verilog,,D:/vivadoFile/2/22/Exp2/code/auxillary/debug_clk.v,,cmp_32,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/core/ALU.v,1628609788,verilog,,D:/vivadoFile/2/22/Exp2/code/auxillary/CPUTEST.v,,ALU,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/core/CSRRegs.v,1699293862,verilog,,D:/vivadoFile/2/22/Exp2/code/core/CtrlUnit.v,,CSRRegs,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/core/CtrlUnit.v,1698744512,verilog,,D:/vivadoFile/2/22/Exp2/code/core/ExceptionUnit.v,,CtrlUnit,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/core/ExceptionUnit.v,1699294310,verilog,,D:/vivadoFile/2/22/Exp2/code/core/HazardDetectionUnit.v,,ExceptionUnit,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/core/HazardDetectionUnit.v,1628627082,verilog,,D:/vivadoFile/2/22/Exp2/code/core/ImmGen.v,,HazardDetectionUnit,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/core/ImmGen.v,1630067830,verilog,,D:/vivadoFile/2/22/Exp2/code/common/MUX2T1_32.v,,ImmGen,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/core/RAM_B.v,1698934046,verilog,,D:/vivadoFile/2/22/Exp2/code/common/REG32.v,,RAM_B,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/core/REG_EX_MEM.v,1698821662,verilog,,D:/vivadoFile/2/22/Exp2/code/core/REG_ID_EX.v,,REG_EX_MEM,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/core/REG_ID_EX.v,1698821658,verilog,,D:/vivadoFile/2/22/Exp2/code/core/REG_IF_ID.v,,REG_ID_EX,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/core/REG_IF_ID.v,1629997584,verilog,,D:/vivadoFile/2/22/Exp2/code/core/REG_MEM_WB.v,,REG_IF_ID,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/core/REG_MEM_WB.v,1698935206,verilog,,D:/vivadoFile/2/22/Exp2/code/core/ROM_D.v,,REG_MEM_WB,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/core/ROM_D.v,1629983722,verilog,,D:/vivadoFile/2/22/Exp2/code/core/RV32core.v,,ROM_D,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/core/RV32core.v,1698935156,verilog,,D:/vivadoFile/2/22/Exp2/code/core/Regs.v,,RV32core,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/core/Regs.v,1629993974,verilog,,D:/vivadoFile/2/22/Exp2/code/common/add_32.v,,Regs,,,../../../../code/auxillary,,,,,
+D:/vivadoFile/2/22/Exp2/code/sim/core_sim.v,1699336523,verilog,,,,core_sim,,,../../../../code/auxillary,,,,,

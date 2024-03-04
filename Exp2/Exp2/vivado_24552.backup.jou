@@ -1,0 +1,125 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Oct 18 17:06:10 2023
+# Process ID: 24552
+# Current directory: D:/vivadoFile/Exp2/Exp2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9696 D:\vivadoFile\Exp2\Exp2\Exp2.xpr
+# Log file: D:/vivadoFile/Exp2/Exp2/vivado.log
+# Journal file: D:/vivadoFile/Exp2/Exp2\vivado.jou
+# Running On: DESKTOP-EUK436V, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 4, Host memory: 16905 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadoFile/Exp2/Exp2/Exp2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/vivadoFile/Exp2/Exp2/code/sim/core_sim_behav.wcfg
+source core_sim.tcl
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/exp_unit/state_mepc}} 
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/exp_unit/csr/rdata}} 
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/exp_unit/csr_r_data_out}} 
+relaunch_sim
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/exp_unit/PC_redirect}} 
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/exp_unit/redirect_mux}} 
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/exp_unit/reg_FD_flush}} {{/core_sim/core/exp_unit/reg_DE_flush}} {{/core_sim/core/exp_unit/reg_EM_flush}} {{/core_sim/core/exp_unit/reg_MW_flush}} {{/core_sim/core/exp_unit/RegWrite_cancel}} 
+relaunch_sim
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/exp_unit/epc_cur}} 
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/exp_unit/csr_wdata}} 
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/exp_unit/epc_record}} 
+relaunch_sim
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/exp_unit/csr_waddr}} 
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/exp_unit/csr_raddr}} 
+relaunch_sim
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/exp_unit/csr/CSR[9]}} 
+relaunch_sim
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/alu/res}} 
+relaunch_sim
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/alu/A}} 
+relaunch_sim
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/reg_MEM_WB/ALUO_MEM}} 
+relaunch_sim
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/CSRout_MEM}} 
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/CSRout_MEM}} 
+relaunch_sim
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/exp_unit/PC_redirect}} 
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/final_PC_IF}} 
+relaunch_sim
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/redirect_mux_exp}} 
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/PC_4_IF}} 
+relaunch_sim
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/PC_IF}} 
+relaunch_sim
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/PC_EN_IF}} 
+relaunch_sim
+add_bp {D:/vivadoFile/Exp2/Exp2/code/common/REG32.v} 32
+remove_bps -file {D:/vivadoFile/Exp2/Exp2/code/common/REG32.v} -line 32
+add_bp {D:/vivadoFile/Exp2/Exp2/code/common/REG32.v} 31
+relaunch_sim
+step
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run 10 us
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+step
+step
+step
+step
+step
+step
+relaunch_sim
+remove_bps -file {D:/vivadoFile/Exp2/Exp2/code/common/REG32.v} -line 31
+close_sim

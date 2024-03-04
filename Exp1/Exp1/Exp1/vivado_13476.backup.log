@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Sep 20 20:01:44 2022
+# Process ID: 13476
+# Current directory: C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5816 C:\Users\haozh\Desktop\ca21\lab\Code4Stu\Exp1\Exp1.xpr
+# Log file: C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/vivado.log
+# Journal file: C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/Exp1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 16
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:58]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:59]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:60]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:61]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:62]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:63]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:65]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:66]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:67]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:68]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:69]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:71]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:72]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:73]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:75]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:76]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:78]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:79]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:88]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:102]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:104]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:106]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:141]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:143]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ";". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/core/CtrlUnit.v:145]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/code/common/cmp_32.v:29]
+[Tue Sep 20 20:46:32 2022] Launched synth_1...
+Run output will be captured here: C:/Users/haozh/Desktop/ca21/lab/Code4Stu/Exp1/Exp1.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 20 20:46:56 2022...
